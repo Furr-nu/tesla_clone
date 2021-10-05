@@ -15,5 +15,5 @@ const Wrap = styled.div`
 width: 100vw;
 height: 100vh;
 background: orange;
-background-image: url('image/model-s.jpg');
+background-image: url('images/model-s.jpg');
 `
