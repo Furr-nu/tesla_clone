@@ -13,9 +13,11 @@ function Section({ title, description, leftBtnText, rightBtnText, backgroundImg 
                     <LeftButton>
                         {leftBtnText}
                     </LeftButton>
-                    <RightButton>
-                        {rightBtnText}
-                    </RightButton>
+                    { rightBtnText && 
+                        <RightButton>
+                            {rightBtnText}
+                        </RightButton>
+                    }
                 </ButtonGroup>
                 <DownArrow src="/images/down-arrow.svg" />
             </Buttons>
@@ -74,7 +76,7 @@ const RightButton = styled(LeftButton)`
 `
 
 const DownArrow = styled.img`
-    height: 40px;
+    height: 0px;
     overflow-x: hidden;
     animation: animateDown infinite 1.5s;
 `
